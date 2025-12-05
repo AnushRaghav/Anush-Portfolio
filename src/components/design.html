@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0d1b2a;
+        color: white;
+        text-align: center;
+    }
+
+    header {
+        padding: 20px;
+        background-color: #0a1624;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+        color: #00b4d8;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 250px;       /* uniform height */
+        object-fit: fill;   /* fill the box and crop if needed */
+        border-radius: 8px;
+        transition: transform 0.3s;
+        display: block;      /* removes inline space */
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    footer {
+        background-color: #0a1624;
+        padding: 10px;
+        font-size: 0.9rem;
+        color: #bbbbbb;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>My Design Projects</h1>
+</header>
+
+<section class="gallery">
+    <img src="design/conveyor_system.png" alt="Conveyor System">
+   <img src="design/dc.png" alt="DC 12V Adapter">
+    <img src="design/display.png" alt="Display">
+    <img src="design/pi_adapter.png" alt="Pi Adapter">
+    <img src="design/robot1.png" alt="Robot">
+    <img src="design/dr.png" alt="Robot">
+    <img src="design/summering.png" alt="Summering">
+    <img src="design/dr2.jpg" alt="Robot">
+    <img src="design/training_kit_system.png" alt="Training Kit">
+    <img src="design/wheel.png" alt="Wheel">
+</section>
+
+<footer>
+    © 2025 My Portfolio. All rights reserved.
+</footer>
+
+</body>
+</html>
